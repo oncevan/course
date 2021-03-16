@@ -20,7 +20,7 @@ public class FileApplication {
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(FileApplication.class);
 		Environment env = app.run(args).getEnvironment();
-		LOG.info("启动成功！！");
+		LOG.info("启动成功！！!");
 		LOG.info("File地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
 	}
 
