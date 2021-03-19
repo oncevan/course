@@ -17,6 +17,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.ArrayList;
 
+
+/**
+ * 访问链接：http://127.0.0.1:9000/business/swagger-ui.html#/
+ */
 @Configuration
 @EnableSwagger2
 //prefix+name通过application.yml文件配置是否启动swagger在线生成文档
