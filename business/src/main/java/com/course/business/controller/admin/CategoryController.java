@@ -5,6 +5,8 @@ import com.course.server.dto.PageDto;
 import com.course.server.dto.ResponseDto;
 import com.course.server.service.CategoryService;
 import com.course.server.util.ValidatorUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin/category")
+@Api("category")
 public class CategoryController {
 
     private static final Logger LOG = LoggerFactory.getLogger(CategoryController.class);
@@ -26,6 +29,7 @@ public class CategoryController {
      * 列表查询
      */
     @PostMapping("/all")
+    @ApiOperation("yse")
     public ResponseDto all() {
         ResponseDto responseDto = new ResponseDto();
         List<CategoryDto> categoryDtoList = categoryService.all();
